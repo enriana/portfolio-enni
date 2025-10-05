@@ -167,4 +167,4 @@ Led the administrative team to achieve a
 25% increase in the on-time completion rate of internal service requests by implementing a metrics-based performance system.
 
 
-(Previous roles at PT Bank Central Asia, Tbk include Senior Office Administration Staff, Senior Finance Staff, and Senior Operational Support Staff) 
+(Previous roles at PT Bank Central Asia, Tbk include Office Administration Staff, Finance Staff, and Operational Support Staff) 
