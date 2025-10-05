@@ -146,13 +146,13 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
         # Placeholder image - replace with an actual chart from your project
         # st.image("https://i.imgur.com/M2L3s5p.png", caption="Feature Importance for Skip Prediction")
         
-    st.markdown("**Actionable Recommendations:**")
-    st.info("""
-    1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
-    2.  **Investigate the Android Platform:** Conduct a UX audit on the Android app.
-    3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
-    """)
-    #st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
+        st.markdown("**Actionable Recommendations:**")
+        st.info("""
+        1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
+        2.  **Investigate the Android Platform:** Conduct a UX audit on the Android app.
+        3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
+        """)
+        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
 
 
 # --- Project 2: RevoBank ---
