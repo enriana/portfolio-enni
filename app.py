@@ -192,7 +192,7 @@ exp_col1, exp_col2 = st.columns([1, 4])
 with exp_col1:
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png", width=80) # BCA Logo
 with exp_col2:
-    st.markdown("#### Office Administration Supervisor | PT Bank Central Asia, Tbk (BCA)")
+    st.markdown("#### Office Administration Section Head | PT Bank Central Asia, Tbk (BCA)")
     st.caption("August 2013 – June 2023")
 
 st.markdown("""
