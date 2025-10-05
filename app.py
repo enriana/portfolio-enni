@@ -177,12 +177,12 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
         # Placeholder image - replace with an actual chart from your project
         # st.image("https://i.imgur.com/2s3ScCa.png", caption="Customer Segments by Income and Spending")
 
-    st.markdown("**Actionable Recommendations:**")
-    st.info("""
-    1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
-    2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
-    """)
-    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
+        st.markdown("**Actionable Recommendations:**")
+        st.info("""
+        1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
+        2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
+        """)
+        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
 
 st.divider()
 
