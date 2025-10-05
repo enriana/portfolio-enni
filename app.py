@@ -67,7 +67,7 @@ h3 {
 # --- SIDEBAR ---
 with st.sidebar:
     # You can upload a professional headshot to your GitHub repo and link it here
-    st.image("https://i.imgur.com/6f20s2s.png", width=150) # Placeholder for a profile picture
+    # Placeholder for a profile picture
     st.title("Enni Jermias")
     st.subheader("Data Analyst")
     st.markdown("""
@@ -81,7 +81,7 @@ with st.sidebar:
     📞 **Phone:** `+62 881082942028`
     """
     )
-    # st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)") # Uncomment and add your LinkedIn
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)") # Uncomment and add your LinkedIn
 
 # --- MAIN CONTENT ---
 
@@ -144,7 +144,7 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     
     with p1_col2:
         # Placeholder image - replace with an actual chart from your project
-        st.image("https://i.imgur.com/M2L3s5p.png", caption="Feature Importance for Skip Prediction")
+        # st.image("https://i.imgur.com/M2L3s5p.png", caption="Feature Importance for Skip Prediction")
         
     st.markdown("**Actionable Recommendations:**")
     st.info("""
@@ -152,7 +152,7 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     2.  **Investigate the Android Platform:** Conduct a UX audit on the Android app.
     3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
     """)
-    st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
+    #st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
 
 
 # --- Project 2: RevoBank ---
@@ -175,14 +175,14 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
 
     with p2_col2:
         # Placeholder image - replace with an actual chart from your project
-        st.image("https://i.imgur.com/2s3ScCa.png", caption="Customer Segments by Income and Spending")
+        # st.image("https://i.imgur.com/2s3ScCa.png", caption="Customer Segments by Income and Spending")
 
     st.markdown("**Actionable Recommendations:**")
     st.info("""
     1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
     2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
     """)
-    st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
+    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
 
 st.divider()
 
