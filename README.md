@@ -146,7 +146,7 @@ For "The Latent User": Focus on activation. Launch targeted campaigns with first
 [View on GitHub] (Note: This would be a hyperlink to the project repository)
 
 Professional Experience
-Office Administration Supervisor | PT Bank Central Asia, Tbk (BCA) | Tuban, Indonesia | Aug 2013 – Jun 2023 
+Office Administration Section Head | PT Bank Central Asia, Tbk (BCA) | Tuban, Indonesia | Aug 2013 – Jun 2023 
 
 In my most recent role, I led the administrative and operational functions for the main branch office. My primary contribution was transforming the department into a center for operational optimization by implementing a data-driven approach to every decision.
 
