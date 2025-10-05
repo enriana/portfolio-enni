@@ -81,7 +81,7 @@ with st.sidebar:
     📞 **Phone:** `+62 881082942028`
     """
     )
-    # st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/your-profile-url/)") # Uncomment and add your LinkedIn
+    # st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)") # Uncomment and add your LinkedIn
 
 # --- MAIN CONTENT ---
 
