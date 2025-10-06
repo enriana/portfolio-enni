@@ -7,13 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- CUSTOM CSS FOR CREAM/PINK THEME ---
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# You can create a style.css file with the content below, or embed it directly.
-# For simplicity, we'll embed it.
+# --- CUSTOM CSS FOR CREAM/PINK THEME (VISUAL ASPECT INTACT) ---
 st.markdown("""
 <style>
 /* Main color theme */
@@ -66,21 +60,17 @@ h3 {
 
 # --- SIDEBAR ---
 with st.sidebar:
-    # You can upload a professional headshot to your GitHub repo and link it here
-    # Placeholder for a profile picture
+    # st.image("https://i.imgur.com/6f20s2s.png", width=150) # Uncomment as a Placeholder for a profile picture
     st.title("Enni Jermias")
     st.subheader("Data Analyst")
-    st.markdown("""
-    A results-oriented professional with 14+ years in banking, now applying a deep understanding of business operations and data to solve complex problems as a Data Analyst.
-    """)
     
     st.divider()
-    st.subheader("📬 Contact Information")
-    st.markdown(f"""
-    📧 **Email:** `enni.jermias@gmail.com`
-    📞 **Phone:** `+62 881082942028`
-    """
-    )
+    st.subheader("📬 Contact")
+    st.markdown("""
+    - **Email:** [enni.jermias@gmail.com](mailto:enni.jermias@gmail.com)
+    - **Phone:** [+62 881082942028](https://wa.me/qr/56T47ETWWYZ3D1)
+    - **Location:** Malang, Indonesia (Open to relocate)
+    """)
     st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)") # Uncomment and add your LinkedIn
 
 # --- MAIN CONTENT ---
@@ -90,50 +80,47 @@ st.title("👩‍💻 Data Analyst Portfolio")
 st.divider()
 
 # --- ABOUT ME ---
-st.subheader("About Me")
+st.header("About Me")
 st.markdown("""
-Hello! My career has been centered on using data to solve real-world business problems, from optimizing multi-billion rupiah budgets to streamlining core operational processes.
+As an aspiring Data Analyst driven by core values of integrity, accuracy, and proactive problem-solving, I leverage a strong foundation from my previous role as an Office Administration Section Head. In that capacity, I moved beyond traditional management to spearhead data-informed initiatives, successfully **cutting operational costs by 12%** and **improving process efficiency by 40%** by analyzing operational data. 
 
-My unique strength is the combination of a **proven business mindset with modern technical capabilities**. I don't just process data; I understand the "why" behind it, ensuring my analysis is always grounded in business context to deliver relevant and impactful insights.
+This experience honed my business acumen and stakeholder communication skills, which are now complemented by my proficiency in modern analytical tools including **SQL, Python, and Tableau**. I offer a unique combination of proven business problem-solving experience and the technical capabilities required to translate complex data into actionable, high-impact insights.
 """)
 st.divider()
 
 # --- SKILLS ---
-st.subheader("🛠️ Skills")
+st.header("🛠️ Skills")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("#### Technical Skills")
+    st.subheader("Technical Skills")
     st.markdown("""
-    - **📊 BI & Visualization:** Tableau, Streamlit
-    - **🐍 Python:** Pandas, Matplotlib, Seaborn, Scikit-learn
-    - **🗃️ Database:** SQL
-    - **📈 Spreadsheets:** Advanced Microsoft Excel
+    - **Languages:** SQL, Python (Pandas, Matplotlib, Seaborn, Scikit-learn)
+    - **BI & Visualization:** Tableau, Streamlit
+    - **Spreadsheets:** Advanced Microsoft Excel
+    - **Statistical Concepts:** Descriptive Statistics, K-Means Clustering
     """)
     
 with col2:
-    st.markdown("#### Professional Skills")
+    st.subheader("Professional Skills")
     st.markdown("""
-    - **💼 Business Acumen & Financial Analysis**
-    - **🧠 Root Cause & Problem Solving**
-    - **🤝 Stakeholder Management & Communication**
-    - **⚙️ Process Optimization**
+    - **Business Acumen & Financial Analysis**
+    - **Problem Solving & Root Cause Analysis**
+    - **Stakeholder Management & Communication**
+    - **Process Optimization & Operations Management**
     """)
 st.divider()
 
 # --- PORTFOLIO PROJECTS ---
-st.subheader("📂 Portfolio Projects")
+st.header("📂 Portfolio Projects")
 
 # --- Project 1: Spotify ---
 with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve User Engagement**", expanded=True):
     p1_col1, p1_col2 = st.columns([2, 1])
     with p1_col1:
-        st.markdown("**Objective:** Develop a machine learning model to predict track skips with >70% accuracy to refine Spotify's recommendation algorithm.")
+        st.markdown("**Objective:** Develop a machine learning model to predict track skips with over 70% accuracy to refine Spotify's recommendation algorithm.")
         st.markdown("""
-        **Methodology:**
-        - Analyzed ~150,000 streaming records using **Python (Pandas)**.
-        - Built and tuned a **Weighted Random Forest** model using **Scikit-learn**.
-        - Visualized findings and created an interactive dashboard with **Streamlit**.
+        **Methodology:** Analyzed ~150,000 streaming records using **Python (Pandas)**, built a **Tuned Weighted Random Forest** model with **Scikit-learn**, and visualized findings in an interactive **Streamlit** dashboard.
         """)
         
         st.markdown("**Key Results & Metrics:**")
@@ -143,61 +130,59 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
         metric_cols[2].metric(label="Skips on Android", value="93.5%")
     
     with p1_col2:
-        # Placeholder image - replace with an actual chart from your project
-        # st.image("https://i.imgur.com/M2L3s5p.png", caption="Feature Importance for Skip Prediction")
+        st.image("caption="Feature Importance for Skip Prediction")
         
-        st.markdown("**Actionable Recommendations:**")
-        st.info("""
-        1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
-        2.  **Investigate the Android Platform:** Conduct a UX audit on the Android app.
-        3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
-        """)
-        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
-
+    st.markdown("**Actionable Recommendations:**")
+    st.info("""
+    1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
+    2.  **Investigate the Android Platform:** Conduct a full UX audit on the Android app.
+    3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
+    """)
+    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
 
 # --- Project 2: RevoBank ---
 with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmentation**"):
     p2_col1, p2_col2 = st.columns([2, 1])
     with p2_col1:
-        st.markdown("**Objective:** Analyze sales performance and segment credit card customers to develop targeted engagement strategies for RevoBank.")
+        st.markdown("**Objective:** Analyze sales performance and segment credit card customers to develop targeted engagement strategies.")
         st.markdown("""
-        **Methodology:**
-        - Performed data cleaning and feature engineering using **Python (Pandas)**.
-        - Applied **K-Means Clustering (Scikit-learn)** to segment users.
-        - Visualized segment characteristics using **Matplotlib and Seaborn**.
+        **Methodology:** Performed data cleaning using **Python (Pandas)** and applied **K-Means Clustering (Scikit-learn)** to segment users based on financial profiles and transaction behaviors.
         """)
         
         st.markdown("**Identified Customer Segments:**")
         st.success("""
         - **The Engaged Spender:** Highly active, financially healthy, and high-value.
-        - **The Latent User:** Inactive but with high income, representing significant untapped potential.
+        - **The Latent User:** Inactive but with high income, representing untapped potential.
         """)
 
     with p2_col2:
-        # Placeholder image - replace with an actual chart from your project
-        # st.image("https://i.imgur.com/2s3ScCa.png", caption="Customer Segments by Income and Spending")
+        st.image(caption="Customer Segments by Income and Spending")
 
-        st.markdown("**Actionable Recommendations:**")
-        st.info("""
-        1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
-        2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
-        """)
-        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Add your link here
+    st.markdown("**Actionable Recommendations:**")
+    st.info("""
+    1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
+    2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
+    """)
+    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
 
 st.divider()
 
-# --- PROFESSIONAL EXPERIENCE ---
-st.subheader("🏢 Professional Experience")
-exp_col1, exp_col2 = st.columns([1, 4])
-with exp_col1:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png", width=80) # BCA Logo
-with exp_col2:
-    st.markdown("#### Office Administration Section Head | PT Bank Central Asia, Tbk (BCA)")
-    st.caption("August 2013 – June 2023")
+# --- PROFESSIONAL & PROJECT EXPERIENCE ---
+st.header("🏢 Professional & Project Experience")
 
+st.subheader("Office Administration Section Head | PT. Bank Central Asia, Tbk")
+st.caption("August 2013 – June 2023")
 st.markdown("""
-- **Analyzed** the multi-billion rupiah operational budget to achieve a **12% annual cost reduction**.
+- **Analyzed** the multi-billion rupiah operational budget to achieve a **12% annual cost reduction** by identifying and resolving critical spending anomalies.
 - **Streamlined** core administrative workflows using data, resulting in a **40% reduction in process lead times**.
 - **Ensured 100% accuracy** in key financial reconciliations by conducting forensic data analysis.
 - **Led** a team to a **25% increase in on-time completion rate** by implementing a metrics-based performance system.
+""")
+
+st.subheader("Key Project: New Branch Office Building Construction | PT. Bank Central Asia, Tbk")
+st.caption("December 2019 – September 2021")
+st.markdown("""
+- **Managed** all on-site vendor logistics and asset lifecycle, coordinating installation of **800+ new assets** while generating over **IDR 300 Million** from the sale of old equipment.
+- **Orchestrated** the complex overnight relocation of the entire **100+ employee branch**, achieving **zero operational downtime** and ensuring **100% business continuity**.
+- **Spearheaded** all branch-level stakeholder coordination, securing all local operational permits ahead of schedule to prevent any project delays.
 """)
