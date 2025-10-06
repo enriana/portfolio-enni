@@ -131,7 +131,7 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     
     with p1_col2:
         # Image removed as requested, only caption remains
-        st.caption("Feature Importance for Skip Prediction")
+        # st.caption("Feature Importance for Skip Prediction")
         
         st.markdown("**Actionable Recommendations:**")
         st.info("""
@@ -158,7 +158,7 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
 
     with p2_col2:
         # Image removed as requested, only caption remains
-        st.caption("Chart: Customer Segments by Income and Spending")
+        # st.caption("Chart: Customer Segments by Income and Spending")
 
         st.markdown("**Actionable Recommendations:**")
         st.info("""
