@@ -130,7 +130,7 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
         metric_cols[2].metric(label="Skips on Android", value="93.5%")
     
     with p1_col2:
-        st.image("caption="Feature Importance for Skip Prediction")
+        # st.image("caption="Feature Importance for Skip Prediction")
         
     st.markdown("**Actionable Recommendations:**")
     st.info("""
