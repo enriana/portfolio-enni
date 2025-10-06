@@ -156,7 +156,7 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
         """)
 
     with p2_col2:
-        st.image(caption="Customer Segments by Income and Spending")
+        # st.image(caption="Customer Segments by Income and Spending")
 
         st.markdown("**Actionable Recommendations:**")
         st.info("""
