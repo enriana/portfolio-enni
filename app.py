@@ -60,7 +60,7 @@ h3 {
 
 # --- SIDEBAR ---
 with st.sidebar:
-    # st.image("https://i.imgur.com/6f20s2s.png", width=150) # Uncomment as a Placeholder for a profile picture
+    st.image("/Users/enni.jermias/Downloads", width=150) # Uncomment as a Placeholder for a profile picture
     st.title("Enni Jermias")
     st.subheader("Data Analyst")
     
