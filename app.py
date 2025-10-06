@@ -132,13 +132,13 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     with p1_col2:
         # st.image("caption="Feature Importance for Skip Prediction")
         
-    st.markdown("**Actionable Recommendations:**")
-    st.info("""
-    1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
-    2.  **Investigate the Android Platform:** Conduct a full UX audit on the Android app.
-    3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
-    """)
-    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
+        st.markdown("**Actionable Recommendations:**")
+        st.info("""
+        1.  **Optimize the First 30 Seconds:** Prioritize tracks with strong openings.
+        2.  **Investigate the Android Platform:** Conduct a full UX audit on the Android app.
+        3.  **Implement Time-Aware Recommendations:** Adapt suggestions to user context (e.g., time of day).
+        """)
+        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
 
 # --- Project 2: RevoBank ---
 with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmentation**"):
@@ -158,12 +158,12 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
     with p2_col2:
         st.image(caption="Customer Segments by Income and Spending")
 
-    st.markdown("**Actionable Recommendations:**")
-    st.info("""
-    1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
-    2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
-    """)
-    # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
+        st.markdown("**Actionable Recommendations:**")
+        st.info("""
+        1.  **For "The Engaged Spender" (Retention):** Implement tiered loyalty programs and personalized offers.
+        2.  **For "The Latent User" (Activation):** Launch campaigns with first-transaction incentives.
+        """)
+        # st.markdown("[View on GitHub](https://github.com/your-username/your-repo-name)") # Uncomment & Add your link here
 
 st.divider()
 
