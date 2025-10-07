@@ -112,7 +112,7 @@ with col2:
 st.divider()
 
 # --- PORTFOLIO PROJECTS ---
-st.header("📂 Portfolio Projects")
+st.header("📂 Data Analytics Projects")
 
 # --- Project 1: Spotify ---
 with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve User Engagement**", expanded=True):
@@ -170,7 +170,7 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
 st.divider()
 
 # --- PROFESSIONAL & PROJECT EXPERIENCE ---
-st.header("🏢 Professional & Project Experience")
+st.header("🏢 Relevant Professional Experience")
 
 st.subheader("Office Administration Section Head | PT. Bank Central Asia, Tbk")
 st.caption("August 2013 – June 2023")
