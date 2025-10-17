@@ -37,7 +37,7 @@ h3 { color: var(--text-color); }
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("https://i.imgur.com/P4w83C5.png", width=150)
+    st.image("https://i.imgur.com/8HIgpLT.jpeg", width=150)
     st.title("Enni Jermias")
     st.subheader("Data Analyst")
     
