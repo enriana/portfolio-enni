@@ -48,7 +48,7 @@ with st.sidebar:
     - **Phone:** [+62 881082942028](tel:+62881082942028)
     - **Location:** Malang, Indonesia (Open to relocate)
     """)
-    # st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/your-profile-url/)")
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)")
 
 # --- MAIN CONTENT ---
 st.title("👩‍💻 Data Analyst Portfolio")
