@@ -57,7 +57,7 @@ st.divider()
 # --- ABOUT ME ---
 st.header("About Me")
 st.markdown("""
-As an aspiring Data Analyst driven by core values of integrity, accuracy, and proactive problem-solving, I leverage a strong foundation from my previous role as an Office Administration Section Head. In that capacity, I moved beyond traditional management to spearhead data-informed initiatives, successfully **cutting operational costs by 12%** and **improving process efficiency by 40%** by analyzing operational data. 
+As an aspiring Data Analyst driven by core values of integrity, accuracy, and proactive problem-solving, I leverage a strong foundation from my previous role as an Office Administration Section Head. In that capacity, I moved beyond traditional management to spearhead data-informed initiatives, leading my team to a **25% increase in on-time service completion** by implementing a metrics-based performance system and improving overall process efficiency by **40%**. 
 
 This experience honed my business acumen and stakeholder communication skills, which are now complemented by my proficiency in modern analytical tools including **SQL, Python, and Tableau**. I offer a unique combination of proven business problem-solving experience and the technical capabilities required to translate complex data into actionable, high-impact insights.
 """)
@@ -119,7 +119,6 @@ st.header("🏢 Professional & Project Experience")
 st.subheader("Office Administration Section Head | PT. Bank Central Asia, Tbk")
 st.caption("August 2013 – June 2023")
 st.markdown("""
-- **Analyzed** the multi-billion rupiah operational budget to achieve a **12% annual cost reduction**.
 - **Streamlined** core administrative workflows using data, resulting in a **40% reduction in process lead times**.
 - **Ensured 100% accuracy** in key financial reconciliations by conducting forensic data analysis.
 - **Led** a team to a **25% increase in on-time completion rate** by implementing a metrics-based performance system.
