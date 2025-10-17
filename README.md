@@ -1,161 +1,54 @@
-# portfolio-enni
-Enni Jermias - Data Analyst Portfolio
+# Enni Jermias - Data Analyst Portfolio
 
-About Me
-Hello! I'm Enni Jermias, a results-oriented professional with a strong foundation in the banking industry, now transitioning my skills into the field of data analytics. My career has been centered on using data to solve real-world business problems, from optimizing multi-billion rupiah budgets to streamlining core operational processes.
+### [View My Interactive Portfolio App](https://your-streamlit-app-url.streamlit.app/) ---
 
+## About Me
 
-Driven by core values of integrity, accuracy, and proactive problem-solving, I don't just process data; I understand the "why" behind it. This ensures my analysis is always grounded in business context to deliver relevant and impactful insights. My journey into data analytics is a natural evolution of my passion for using evidence to drive efficiency and make smarter decisions.
+As an aspiring Data Analyst driven by core values of integrity, accuracy, and proactive problem-solving, I leverage a strong foundation from my previous role as an Office Administration Section Head. In that capacity, I moved beyond traditional management to spearhead data-informed initiatives, successfully **cutting operational costs by 12%** and **improving process efficiency by 40%** by analyzing operational data.
 
+This experience honed my business acumen and stakeholder communication skills, which are now complemented by my proficiency in modern analytical tools including **SQL, Python, and Tableau**. I offer a unique combination of proven business problem-solving experience and the technical capabilities required to translate complex data into actionable, high-impact insights.
 
+* **Email:** `enni.jermias@gmail.com`
+* **Phone:** `+62 881082942028`
+* **Location:** Malang, Indonesia (Open to relocate)
 
+---
 
+## 🛠️ Skills
 
-Contact:
+| Technical Skills | Professional Skills |
+| :--- | :--- |
+| **Languages:** SQL, Python | **Business Acumen & Financial Analysis** |
+| **Libraries:** Pandas, Matplotlib, Seaborn, Scikit-learn | **Problem Solving & Root Cause Analysis** |
+| **BI & Visualization:** Tableau, Streamlit | **Stakeholder Management & Communication** |
+| **Spreadsheets:** Advanced Microsoft Excel | **Project Management & Process Optimization** |
 
+---
 
-Email: enni.jermias@gmail.com 
+## 📂 Portfolio Projects
 
+### Predicting Spotify Track Skips to Improve User Engagement
+* **Objective:** To improve user engagement and retention, the project's goal was to develop a machine learning model that predicts whether a user will skip a track with at least 70% accuracy, enabling the refinement of Spotify's recommendation algorithm.
+* **Methodology:** Analyzed ~150,000 streaming records using **Python (Pandas)**, built and tuned a **Weighted Random Forest** model with **Scikit-learn**, and visualized findings in an interactive **Streamlit** dashboard.
+* **Key Results:** Achieved **91.12% model accuracy**, far exceeding the 70% target. Uncovered that **77.4% of skips occur in the first 30 seconds** and **93.5% of skips originate from the Android platform**.
+* **[View on GitHub](https://github.com/your-username/your-repo-name)** ### RevoBank Sales Performance & Customer Segmentation
+* **Objective:** To segment existing credit card clients into distinct user personas based on their financial profiles and transaction behaviors to drive higher, more targeted engagement.
+* **Methodology:** Performed data cleaning and feature engineering using **Python (Pandas)** and applied **K-Means Clustering (Scikit-learn)** to segment users based on metrics like transaction recency, frequency, and Debt-to-Income ratio.
+* **Key Results:** Identified two primary customer segments: **"The Engaged Spender"** (highly active, high-value) and **"The Latent User"** (inactive, high-income, high potential), enabling tailored retention and activation strategies.
+* **[View on GitHub](https://github.com/your-username/your-repo-name)** ---
 
-Phone: +62 881082942028 
+## 🏢 Professional & Project Experience
 
+### Office Administration Section Head | PT. Bank Central Asia, Tbk (2013 – 2023)
+* **Analyzed** the multi-billion rupiah operational budget to achieve a **12% annual cost reduction** by identifying and resolving critical spending anomalies.
+* **Streamlined** core administrative workflows using data, resulting in a **40% reduction in process lead times**.
+* **Ensured 100% accuracy** in key financial reconciliations by conducting forensic data analysis.
+* **Led** a team to a **25% increase in on-time completion rate** of service requests by implementing a metrics-based performance system.
 
-Location: Malang, Indonesia (Open to relocate) 
-
-Skills
-Technical Skills
-
-Languages: SQL, Python (Pandas, Matplotlib, Seaborn, Scikit-learn) 
-
-
-
-
-BI & Visualization: Tableau, Streamlit 
-
-
-
-
-Spreadsheets: Advanced Microsoft Excel (Pivot Tables, VLOOKUP/HLOOKUP, Complex Formulas, Dashboards) 
-
-
-Statistical Concepts: Descriptive Statistics, K-Means Clustering, Hypothesis Testing 
-
-
-
-
-Professional Skills
-
-Business Acumen: Deep understanding of banking operations, risk management, and profitability drivers.
-
-
-Problem Solving: Proven ability to identify root causes of operational and financial issues and design long-term solutions.
-
-
-
-Stakeholder Management: Expertise in communicating complex findings to diverse audiences to drive action.
-
-
-
-Financial Analysis: Skilled in budgeting, forecasting, and performing cost-benefit analysis to support data-driven recommendations.
-
-
-
-Portfolio Projects
-Project 1: Predicting Spotify Track Skips to Improve User Engagement
-This project aimed to improve user retention on Spotify by building a model to predict if a user would skip a track, enabling the refinement of the recommendation algorithm.
-
-
-
-Objective: Develop a machine learning model to predict track skips with over 70% accuracy.
-
-
-Methodology: Cleaned and analyzed a dataset of ~150,000 streaming records using Python (pandas). Conducted Exploratory Data Analysis (EDA) and built a Tuned Weighted Random Forest model using 
-
-
-scikit-learn. Visualized findings with 
-
-seaborn and matplotlib, presenting them in an interactive Streamlit dashboard.
-
-Key Insights & Results:
-
-The model achieved 
-
-91.12% accuracy, significantly exceeding the 70% target.
-
-Identified that 
-
-77.4% of skips occur within the first 30 seconds, indicating immediate content mismatch.
-
-
-Discovered that 
-
-93.5% of all skips originated from the Android platform, suggesting potential platform-specific issues.
-
-
-Actionable Recommendations:
-
-
-Optimize the First 30 Seconds: Prioritize tracks with strong openings and use early skips as a key signal for poor recommendations.
-
-
-Investigate the Android Platform: Conduct a full technical and UX audit on the Android app to resolve potential friction points contributing to the high skip rate.
-
-
-Implement Time-Aware Recommendations: Adapt suggestions to the user's context, such as offering calmer music during late-night hours when skip rates are highest.
-
-[View on GitHub] (Note: This would be a hyperlink to the project repository)
-
-Project 2: RevoBank Sales Performance Analysis & Customer Segmentation
-This project analyzed six months of credit card transaction data to understand sales performance and segment customers for targeted marketing campaigns to drive higher engagement.
-
-
-Objective: To segment existing clients into distinct user personas based on their financial profiles and transaction behaviors.
-
-
-Methodology: Performed data cleaning and feature engineering using Python and pandas. Applied 
-
-K-Means Clustering (scikit-learn) to segment users based on metrics like transaction recency, frequency, and Debt-to-Income ratio. Visualized segment characteristics using 
-
-
-
-matplotlib and seaborn.
-
-Key Insights & Results:
-
-Identified two primary customer segments: 
-
-"The Engaged Spender" (highly active, older, financially healthy) and "The Latent User" (inactive, younger, but with high income and untapped potential).
-
-
-Discovered that while fraud accounted for only 0.22% of transaction volume, it resulted in over 
-
-Rp1 billion in losses over six months.
-
-Actionable Recommendations:
-
-For "The Engaged Spender": Focus on retention. Implement tiered loyalty programs, provide personalized offers, and cross-sell premium financial products.
-
-For "The Latent User": Focus on activation. Launch targeted campaigns with first-transaction incentives and improve the new client onboarding process to educate them on card benefits.
-
-[View on GitHub] (Note: This would be a hyperlink to the project repository)
-
-Professional Experience
-Office Administration Section Head | PT Bank Central Asia, Tbk (BCA) | Tuban, Indonesia | Aug 2013 – Jun 2023 
-
-
-In this role, I transformed the department into a center for operational optimization by implementing a data-driven approach to every decision.
-
-Analyzed the multi-billion rupiah operational budget to achieve a 
-
-12% annual cost reduction by identifying and resolving critical spending anomalies through data analysis.
-
-
-Streamlined core administrative workflows using a data-driven approach, resulting in a 
-
-40% reduction in process lead times and enhancing internal stakeholder satisfaction.
-
-
-Ensured 
+### Key Project: New Branch Office Building Construction (2019 – 2021)
+* **Managed** all on-site vendor logistics and asset lifecycle for a new main branch building, coordinating on-time installation of **800+ new assets** while generating over **IDR 300 Million** from the sale of old equipment.
+* **Orchestrated** the complex overnight relocation of the entire **100+ employee branch**, achieving **zero operational downtime** and ensuring **100% business continuity**.
+* **Spearheaded** all branch-level stakeholder coordination for the building project, successfully securing all local operational permits ahead of schedule to prevent any project delays.
 
 100% accuracy in key financial reconciliations by conducting forensic data analysis to eliminate a recurring systemic error, strengthening compliance and audit readiness.
 
