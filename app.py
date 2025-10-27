@@ -97,7 +97,8 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     metric_cols[0].metric(label="Model Accuracy", value="91.12%")
     metric_cols[1].metric(label="Skips in First 30s", value="77.4%")
     metric_cols[2].metric(label="Skips on Android", value="93.5%")
-        
+    
+    st.markdown("[View PDF](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")   
     
 # --- Project 2: RevoBank ---
 with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmentation**"):
@@ -109,7 +110,7 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
     - **The Engaged Spender:** Highly active, financially healthy, and high-value.
     - **The Latent User:** Inactive but with high income, representing significant untapped potential.
     """)
-    
+    st.markdown("[View Deck](https://docs.google.com/presentation/d/1qrlX4-W6nHXHCN2Qsdh9sn0r_aMyTPKx1tzqrYytwj4/edit?usp=sharing)")
 
 st.divider()
 
