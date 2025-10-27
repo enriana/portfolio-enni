@@ -37,7 +37,7 @@ This experience honed my business acumen and stakeholder communication skills, w
 * **Objective:** To segment existing credit card clients into distinct user personas based on their financial profiles and transaction behaviors to drive higher, more targeted engagement.
 * **Methodology:** Performed data cleaning and feature engineering using **Python (Pandas)** and applied **K-Means Clustering (Scikit-learn)** to segment users based on metrics like transaction recency, frequency, and Debt-to-Income ratio.
 * **Key Results:** Identified two primary customer segments: **"The Engaged Spender"** (highly active, high-value) and **"The Latent User"** (inactive, high-income, high potential), enabling tailored retention and activation strategies.
-* **[View on Deck](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)** ---
+* **[View on Deck](https://docs.google.com/presentation/d/1qrlX4-W6nHXHCN2Qsdh9sn0r_aMyTPKx1tzqrYytwj4/edit?usp=sharing)** ---
 
 ## 🏢 Professional & Project Experience
 
