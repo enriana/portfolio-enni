@@ -98,7 +98,8 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     metric_cols[1].metric(label="Skips in First 30s", value="77.4%")
     metric_cols[2].metric(label="Skips on Android", value="93.5%")
     
-    st.markdown("[View PDF](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")   
+    st.markdown("[View PDF](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")
+    st.markdown("[View Dashboard](https://spotify-skip-prediction-dashboard.streamlit.app/?embed_options=light_theme)")
     
 # --- Project 2: RevoBank ---
 with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmentation**"):
