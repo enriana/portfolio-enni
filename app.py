@@ -63,7 +63,15 @@ This experience honed my business acumen and stakeholder communication skills, w
 
 # --- PROFESSIONAL EXPERIENCE ---
 st.header("🏢 Professional Experience")
-st.subheader("PT. Bank Central Asia, Tbk - KCU Tuban")
+# --- REFINED SECTION ---
+# Create columns for the logo and the subheader
+logo_col, title_col = st.columns([1, 7])  # Adjust ratio as needed
+with logo_col:
+    # Add the BCA logo. You can find a good URL online.
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png", width=70)
+with title_col:
+    st.subheader("PT. Bank Central Asia, Tbk - KCU Tuban")
+    
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("**➤ Office Administration Section Head**")
