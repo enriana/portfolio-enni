@@ -66,14 +66,14 @@ st.header("🏢 Professional Experience")
 st.subheader("PT. Bank Central Asia, Tbk - KCU Tuban")
 col1, col2 = st.columns(2)
 with col1:
-    st.markdown("➤ Office Administration Section Head")
+    st.markdown("**➤ Office Administration Section Head**")
     st.caption("    August 2013 – June 2023")
-    st.markdown("➤ Office Administration Staff")
+    st.markdown("**➤ Office Administration Staff**")
     st.caption("    May 2011 – July 2013")
 with col2:
-    st.subheader("➤ Finance Staff")
+    st.markdown("**➤ Finance Staff**")
     st.caption("    July 2009 – April 2011")
-    st.subheader("➤ Operational Support Staff")
+    st.markdown("**➤ Operational Support Staff**")
     st.caption("    April 2009 – June 2009")
 
 # --- SKILLS ---
