@@ -45,7 +45,6 @@ with st.sidebar:
     st.subheader("📬 Contact")
     st.markdown("""
     - **Email:** [enni.jermias@gmail.com](mailto:enni.jermias@gmail.com)
-    - **Phone:** [+62 881082942028](tel:+62881082942028)
     - **Location:** Malang, Indonesia (Open to relocate)
     """)
     st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)")
@@ -63,16 +62,29 @@ This experience honed my business acumen and stakeholder communication skills, w
 """)
 st.divider()
 
+# --- PROFESSIONAL EXPERIENCE ---
+st.header("🏢 Professional Experience")
+
+st.subheader("PT. Bank Central Asia, Tbk - KCU Tuban")
+st.subheader("Office Administration Section Head")
+st.caption("August 2013 – June 2023")
+st.subheader("Office Administration Staff")
+st.caption("May 2011 – July 2013")
+st.subheader("Finance Staff")
+st.caption("July 2009 – April 2011")
+st.subheader("Operational Support Staff")
+st.caption("April 2009 – June 2009")
+
 # --- SKILLS ---
 st.header("🛠️ Skills")
 col1, col2 = st.columns(2)
 with col1:
     st.subheader("Technical Skills")
     st.markdown("""
-    - **Languages:** SQL, Python
+    - **Programming Languages:** SQL, Python
     - **Libraries:** Pandas, Matplotlib, Seaborn, Scikit-learn
-    - **BI & Visualization:** Tableau, Streamlit
-    - **Spreadsheets:** Advanced Microsoft Excel
+    - **Data Visualization:** Tableau, Streamlit
+    - **Other Tools:** Advanced Microsoft Excel
     """)
 with col2:
     st.subheader("Professional Skills")
@@ -115,21 +127,4 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
 
 st.divider()
 
-# --- PROFESSIONAL EXPERIENCE ---
-st.header("🏢 Professional Experience")
 
-st.subheader("Office Administration Section Head | PT. Bank Central Asia, Tbk")
-st.caption("August 2013 – June 2023")
-st.markdown("""
-- **Streamlined** core administrative workflows using data, resulting in a **40% reduction in process lead times**.
-- **Ensured 100% accuracy** in key financial reconciliations by conducting forensic data analysis.
-- **Led** a team to a **25% increase in on-time completion rate** by implementing a metrics-based performance system.
-""")
-
-st.subheader("Key Project: New Branch Office Building Construction | PT. Bank Central Asia, Tbk")
-st.caption("December 2019 – September 2021")
-st.markdown("""
-- **Managed** all on-site vendor logistics and asset lifecycle for a new main branch building, coordinating on-time installation of **800+ new assets** while generating over **IDR 300 Million** from the sale of old equipment.
-- **Orchestrated** the complex overnight relocation of the entire **100+ employee branch**, achieving **zero operational downtime** and ensuring **100% business continuity**.
-- **Spearheaded** all branch-level stakeholder coordination, acting as the central liaison and successfully securing all local operational permits ahead of schedule to prevent any project delays.
-""")
