@@ -61,6 +61,27 @@ As an aspiring Data Analyst driven by core values of integrity, accuracy, and pr
 This experience honed my business acumen and stakeholder communication skills, which are now complemented by my proficiency in modern analytical tools including **SQL, Python, and Tableau**. I offer a unique combination of proven business problem-solving experience and the technical capabilities required to translate complex data into actionable, high-impact insights.
 """)
 
+# --- EDUCATION ---
+st.header("🎓 Education")
+
+# Create columns for Education
+edu1, edu2, edu3 = st.columns(3)
+
+with edu1:
+    st.subheader("[RevoU](https://www.google.com/search?q=RevoU)")
+    st.caption("June 2025 – September 2025")
+    st.markdown("Full-stack Data Analytics")
+    
+with edu2:
+    st.subheader("[Program Pendidikan Akuntansi (PPA) BCA](https://www.google.com/search?q=Program+Pendidikan+Akuntansi+(PPA)+BCA)")
+    st.caption("2006 – 2009")
+    st.markdown("PT. Bank Central Asia, Tbk")
+    
+with edu3:
+    st.subheader("[SMAK Santa Maria Malang](https://www.google.com/search?q=SMAK+Santa+Maria+Malang)")
+    st.caption("2003 – 2006")
+    st.markdown("Senior High School")
+
 # --- PROFESSIONAL EXPERIENCE ---
 st.header("🏢 Professional Experience")
 # --- REFINED SECTION ---
