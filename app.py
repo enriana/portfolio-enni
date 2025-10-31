@@ -137,8 +137,12 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     st.markdown("**Key Results & Metrics:**")
     metric_cols = st.columns(3)
     metric_cols[0].metric(label="Model Accuracy", value="91.12%")
-    metric_cols[1].metric(label="Skips in First 30s", value="77.4%")
+    
+    metric_cols[1].metric(label="Skips in First 30s of the Tracks", value="77.4%")
+    metric_cols[1].caption("Highlights the importance of immediate engagement, as most skips occur in the first 30s.")
+    
     metric_cols[2].metric(label="Skips on Android", value="93.5%")
+    metric_cols[2].caption("Suggests potential platform-specific (UX/technical) issues on Android.")
     
     st.markdown("[View PDF](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")
     st.markdown("[View Dashboard](https://spotify-skip-prediction-dashboard.streamlit.app/?embed_options=light_theme)")
