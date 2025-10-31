@@ -54,7 +54,7 @@ st.title("👩‍💻 Data Analyst Portfolio")
 st.divider()
 
 # --- ABOUT ME ---
-st.header("🙋‍♀️About Me")
+st.header("🙋‍♀️ About Me")
 st.markdown("""
 As an aspiring Data Analyst driven by core values of integrity, accuracy, and proactive problem-solving, I leverage a strong foundation from my previous role as an Office Administration Section Head. In that capacity, I moved beyond traditional management to spearhead data-informed initiatives, leading my team to a **25% increase in on-time service completion** by implementing a metrics-based performance system and improving overall process efficiency by **40%**. 
 
