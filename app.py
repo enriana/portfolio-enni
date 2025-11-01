@@ -130,7 +130,7 @@ st.divider()
 st.header("📂 Projects")
 
 # --- Project 1: Spotify ---
-with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve User Engagement**", expanded=True):
+with st.expander("🎧 **Project 1: Predicting Spotify Track Skips to Improve User Engagement**", expanded=True):
     st.markdown("**Objective:** To improve user engagement and retention, the project's goal was to develop a machine learning model that predicts whether a user will skip a track with at least 70% accuracy, enabling the refinement of Spotify's recommendation algorithm.")
     st.markdown("**Methodology:** Analyzed ~150,000 streaming records using **Python (Pandas)**, built a **Tuned Weighted Random Forest** model with **Scikit-learn**, and visualized findings in an interactive **Streamlit** dashboard.")
     
