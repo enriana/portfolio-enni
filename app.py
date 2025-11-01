@@ -138,7 +138,7 @@ with st.expander("🎧 **Project 1: Predicting Spotify Track Skips to Improve Us
     metric_cols = st.columns(3)
     metric_cols[0].metric(label="Model Accuracy", value="91.12%")
     
-    metric_cols[1].metric(label="Skips in First 30s of the Tracks", value="77.4%")
+    metric_cols[1].metric(label="Skips in First 30s of a Track", value="77.4%")
     metric_cols[1].caption("Highlights the importance of immediate engagement, as most skips occur in the first 30s.")
     
     metric_cols[2].metric(label="Skips on Android", value="93.5%")
