@@ -50,7 +50,7 @@ with st.sidebar:
     st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/enni-jermias)")
 
 # --- MAIN CONTENT ---
-st.title("👩‍💻 Data Analyst Portfolio")
+st.title("🗂️ Data Analyst Portfolio")
 st.divider()
 
 # --- ABOUT ME ---
@@ -144,8 +144,8 @@ with st.expander("▶️ **Project 1: Predicting Spotify Track Skips to Improve 
     metric_cols[2].metric(label="Skips on Android", value="93.5%")
     metric_cols[2].caption("Suggests potential platform-specific (UX/technical) issues on Android.")
     
-    st.markdown("[View PDF](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")
-    st.markdown("[View Dashboard](https://spotify-skip-prediction-dashboard.streamlit.app/?embed_options=light_theme)")
+    st.markdown("[View PDF 📋](https://drive.google.com/file/d/1vSLozk2oMHycUSwZh4fb0z8em722d369/view?usp=sharing)")
+    st.markdown("[View Dashboard 📊](https://spotify-skip-prediction-dashboard.streamlit.app/?embed_options=light_theme)")
     
 # --- Project 2: RevoBank ---
 with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmentation**"):
@@ -157,7 +157,7 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
     - **The Engaged Spender:** Highly active, financially healthy, and high-value.
     - **The Latent User:** Inactive but with high income, representing significant untapped potential.
     """)
-    st.markdown("[View PDF](https://drive.google.com/file/d/1VDYS6UszIILwdLmW7Uprcayvae9vEqYG/view?usp=sharing)")
+    st.markdown("[View PDF 📋](https://drive.google.com/file/d/1VDYS6UszIILwdLmW7Uprcayvae9vEqYG/view?usp=sharing)")
 
 st.divider()
 
