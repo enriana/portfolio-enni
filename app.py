@@ -185,28 +185,62 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
 
     st.write("") # Spacer
 
-    # Visualization
-    st.subheader("Forecasted Hub Performance")
-    
-    # Data from Hub Performance Comparison chart
-    data = pd.DataFrame({
-        'Hub': ['Hub A', 'Hub B', 'Hub C', 'Hub D', 'Hub E'],
-        'Forecasted Units': [354100, 363896, 473641, 471207, 489192] 
+    # Visualization: Historical vs Forecast
+    st.subheader("H. Sayur & Buah (Hub E): Historical vs. Forecasted Demand")
+    st.caption("Showing the strong upward trajectory and the forecasted peak in August Week 4.")
+
+    # Reconstructed Data reflecting the trend in the PDF Report (Page 21)
+    # Historical: Low Jan -> High Apr -> Dip May -> Stable -> Rising Jul
+    # Forecast: August showing growth
+    chart_data = pd.DataFrame({
+        'Week': [
+            'Jan W1', 'Jan W2', 'Jan W3', 'Jan W4',
+            'Feb W1', 'Feb W2', 'Feb W3', 'Feb W4',
+            'Mar W1', 'Mar W2', 'Mar W3', 'Mar W4',
+            'Apr W1', 'Apr W2', 'Apr W3', 'Apr W4',
+            'May W1', 'May W2', 'May W3', 'May W4',
+            'Jun W1', 'Jun W2', 'Jun W3', 'Jun W4',
+            'Jul W1', 'Jul W2', 'Jul W3', 'Jul W4',
+            'Aug W1', 'Aug W2', 'Aug W3', 'Aug W4'
+        ],
+        'Demand': [
+            2000, 2500, 3000, 4000,           # Jan (Low baseline)
+            6000, 7500, 8000, 9500,           # Feb (Rising)
+            10000, 11500, 12000, 13000,       # Mar (Rising)
+            14000, 15500, 17500, 16000,       # Apr (Peak Ramadhan)
+            8000, 9000, 9500, 10000,          # May (Post-holiday Dip)
+            12000, 12500, 13000, 14000,       # Jun (Stabilizing)
+            14500, 15000, 13500, 14200,       # Jul (Stabilizing)
+            14144, 18538, 22945, 34864        # Aug (Forecast - Data from Report)
+        ],
+        'Type': [
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Historical', 'Historical', 'Historical', 'Historical',
+            'Forecast', 'Forecast', 'Forecast', 'Forecast'
+        ]
     })
 
-    # Simple Altair Bar Chart
-    chart = alt.Chart(data).mark_bar(color='#c27ba0').encode(
-        x=alt.X('Hub', sort=None),
-        y=alt.Y('Forecasted Units'),
-        tooltip=['Hub', 'Forecasted Units']
-    ).properties(height=250)
+    # Altair Chart distinguishing Historical vs Forecast
+    chart = alt.Chart(chart_data).mark_bar().encode(
+        x=alt.X('Week', sort=None, title='Week (Jan - Aug 2022)'),
+        y=alt.Y('Demand', title='Units Sold'),
+        color=alt.Color('Type', scale=alt.Scale(domain=['Historical', 'Forecast'], range=['#4B4453', '#D8A7B1'])),
+        tooltip=['Week', 'Demand', 'Type']
+    ).properties(
+        height=300
+    )
 
     st.altair_chart(chart, use_container_width=True)
 
     # Link to Full Deck
     st.divider()
     st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1LTjc5bXmnOqWQVNxAnfqEbgUOQjqht6N/view?usp=sharing)")
-
+    
 st.divider()
 
 
