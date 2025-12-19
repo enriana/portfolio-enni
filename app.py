@@ -173,15 +173,15 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
     
     with col1:
         st.metric(label="Total Forecast (Aug '22)", value="417,082")
-        [cite_start]st.caption("Units predicted across all hubs")
+        st.caption("Units predicted across all hubs")
         
     with col2:
         st.metric(label="Model Accuracy (MAPE)", value="21.3%")
-        [cite_start]st.caption("Reliable directional accuracy")
+        st.caption("Reliable directional accuracy")
 
     with col3:
         st.metric(label="Top Growth Location", value="Hub E")
-        [cite_start]st.caption("Highest projected demand")
+        st.caption("Highest projected demand")
 
     st.write("") # Spacer
 
