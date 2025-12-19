@@ -183,35 +183,37 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
         st.metric(label="Top Growth Location", value="Hub E")
         st.caption("Highest projected demand")
 
-    st.write("") # Spacer
+st.write("") # Spacer
 
     # Visualization: Historical vs Forecast
     st.subheader("H. Sayur & Buah (Hub E): Historical vs. Forecasted Demand")
-    st.caption("Showing the strong upward trajectory and the forecasted peak in August Week 4.")
+    st.caption("Showing the demand trajectory with a forecasted peak in August Week 4.")
 
-    # Reconstructed Data reflecting the trend in the PDF Report (Page 21)
-    # Historical: Low Jan -> High Apr -> Dip May -> Stable -> Rising Jul
-    # Forecast: August showing growth
+    # Data Source: User provided specific historical and forecast figures.
     chart_data = pd.DataFrame({
         'Week': [
-            'Jan W1', 'Jan W2', 'Jan W3', 'Jan W4',
-            'Feb W1', 'Feb W2', 'Feb W3', 'Feb W4',
-            'Mar W1', 'Mar W2', 'Mar W3', 'Mar W4',
-            'Apr W1', 'Apr W2', 'Apr W3', 'Apr W4',
-            'May W1', 'May W2', 'May W3', 'May W4',
-            'Jun W1', 'Jun W2', 'Jun W3', 'Jun W4',
-            'Jul W1', 'Jul W2', 'Jul W3', 'Jul W4',
-            'Aug W1', 'Aug W2', 'Aug W3', 'Aug W4'
+            # Historical Data (Jan - Jul)
+            'Jan 1 (W1)', 'Jan 8 (W2)', 'Jan 15 (W3)', 'Jan 22 (W4)',
+            'Feb 1 (W5)', 'Feb 8 (W6)', 'Feb 15 (W7)', 'Feb 22 (W8)',
+            'Mar 1 (W9)', 'Mar 8 (W10)', 'Mar 15 (W11)', 'Mar 22 (W12)',
+            'Apr 1 (W13)', 'Apr 8 (W14)', 'Apr 15 (W15)', 'Apr 22 (W16)',
+            'May 1 (W17)', 'May 8 (W18)', 'May 15 (W19)', 'May 22 (W20)',
+            'Jun 1 (W21)', 'Jun 8 (W22)', 'Jun 15 (W23)', 'Jun 22 (W24)',
+            'Jul 1 (W25)', 'Jul 8 (W26)', 'Jul 15 (W27)', 'Jul 22 (W28)',
+            # Forecast Data (Aug)
+            'Aug 5 (W1)', 'Aug 12 (W2)', 'Aug 19 (W3)', 'Aug 26 (W4)'
         ],
         'Demand': [
-            2000, 2500, 3000, 4000,           # Jan (Low baseline)
-            6000, 7500, 8000, 9500,           # Feb (Rising)
-            10000, 11500, 12000, 13000,       # Mar (Rising)
-            14000, 15500, 17500, 16000,       # Apr (Peak Ramadhan)
-            8000, 9000, 9500, 10000,          # May (Post-holiday Dip)
-            12000, 12500, 13000, 14000,       # Jun (Stabilizing)
-            14500, 15000, 13500, 14200,       # Jul (Stabilizing)
-            14144, 18538, 22945, 34864        # Aug (Forecast - Data from Report)
+            # Historical Values
+            525, 700, 875, 1400,
+            2431, 3241, 4051, 6482,
+            4424, 5899, 7373, 11797,
+            6547, 8730, 10912, 17460,
+            5631, 7508, 9385, 15016,
+            5856, 7808, 9760, 15616,
+            5505, 7340, 9174, 14679,
+            # Forecast Values
+            4817, 6836, 8804, 14407
         ],
         'Type': [
             'Historical', 'Historical', 'Historical', 'Historical',
@@ -240,7 +242,7 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
     # Link to Full Deck
     st.divider()
     st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1LTjc5bXmnOqWQVNxAnfqEbgUOQjqht6N/view?usp=sharing)")
-    
+
 st.divider()
 
 
