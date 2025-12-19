@@ -169,9 +169,9 @@ def project_quicku_forecasting():
     
     # --- Concise Summary ---
     st.markdown("""
-    [cite_start]**Objective:** To generate an accurate stock demand forecast for August 2022 to minimize expired inventory (waste) and prevent stockouts across QuickU's network of 5 hubs[cite: 24, 25, 28].
+    **Objective:** To generate an accurate stock demand forecast for August 2022 to minimize expired inventory (waste) and prevent stockouts across QuickU's network of 5 hubs.
 
-    **Methodology:** Analyzed 7 months of historical data using Python (Statsmodels). [cite_start]Developed **50 unique SARIMA models** to handle seasonality and trend variations across specific product categories and locations[cite: 44].
+    **Methodology:** Analyzed 7 months of historical data using Python (Statsmodels). Developed **50 unique SARIMA models** to handle seasonality and trend variations across specific product categories and locations.
     """)
 
     st.write("") # Spacer
@@ -182,22 +182,22 @@ def project_quicku_forecasting():
     
     with col1:
         st.metric(label="Total Forecast (Aug '22)", value="417,082")
-        [cite_start]st.caption("Units predicted across all hubs [cite: 42]")
+        st.caption("Units predicted across all hubs")
         
     with col2:
         st.metric(label="Model Accuracy (MAPE)", value="21.3%")
-        [cite_start]st.caption("Reliable directional accuracy [cite: 226]")
+        st.caption("Reliable directional accuracy")
 
     with col3:
         st.metric(label="Top Growth Location", value="Hub E")
-        [cite_start]st.caption("Highest projected demand [cite: 50]")
+        st.caption("Highest projected demand")
 
     st.write("") # Spacer
 
     # --- Visualization ---
     st.subheader("Forecasted Hub Performance")
     
-    # [cite_start]Data from Hub Performance Comparison chart [cite: 177]
+    # Data from Hub Performance Comparison chart
     data = pd.DataFrame({
         'Hub': ['Hub A', 'Hub B', 'Hub C', 'Hub D', 'Hub E'],
         'Forecasted Units': [354100, 363896, 473641, 471207, 489192] 
@@ -225,6 +225,8 @@ def project_quicku_forecasting():
 # Instructions:
 # Copy this function into your main Streamlit app file and call 
 # project_quicku_forecasting() inside your main layout.
+
+
 st.divider()
 
 
