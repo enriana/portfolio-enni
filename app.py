@@ -163,8 +163,8 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
 
 # --- Project 3: QuickU ---
 with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
-    [cite_start]st.markdown("**Objective:** To generate an accurate stock demand forecast for August 2022 to minimize expired inventory (waste) and prevent stockouts across QuickU's network of 5 hubs.")
-    [cite_start]st.markdown("**Methodology:** Analyzed 7 months of historical data using **Python (Statsmodels)**. Developed **50 unique SARIMA models** to handle seasonality and trend variations across specific product categories and locations.")
+    st.markdown("**Objective:** To generate an accurate stock demand forecast for August 2022 to minimize expired inventory (waste) and prevent stockouts across QuickU's network of 5 hubs.")
+    st.markdown("**Methodology:** Analyzed 7 months of historical data using **Python (Statsmodels)**. Developed **50 unique SARIMA models** to handle seasonality and trend variations across specific product categories and locations.")
     
     st.write("") # Spacer
 
