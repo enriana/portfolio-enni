@@ -293,12 +293,6 @@ with st.expander("💼 **Project 4: RevoFin Loan Portfolio Analysis**"):
 
     # Link to Full Deck
     st.divider()
-    st.markdown("### 📄 View Full Analysis")
-    st.write("Deep dive into vintage analysis, TKB30 trends, and risk profiling.")
-    
-    # NOTE: You will need to replace the URL below with the actual link to your RevoFin deck if you have one uploaded. 
-    # For now, I've left a placeholder or you can use the same Drive link structure if you upload it later.
-    st.divider()
     st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1p-9U8vvnuUYHjhno0x1kvDTx8AVZtOVE/view?usp=sharing)")
 
 st.divider()
