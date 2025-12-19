@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import altair as alt
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
@@ -158,7 +160,71 @@ with st.expander("💳 **Project 2: RevoBank Sales Performance & Customer Segmen
     - **The Latent User:** Inactive but with high income, representing significant untapped potential.
     """)
     st.markdown("[View PDF 📋](https://drive.google.com/file/d/1VDYS6UszIILwdLmW7Uprcayvae9vEqYG/view?usp=sharing)")
+    
+def project_quicku_forecasting():
+    """
+    Renders the QuickU Demand Forecasting project page.
+    """
+    st.header("🛒 QuickU Demand Forecasting")
+    
+    # --- Concise Summary ---
+    st.markdown("""
+    [cite_start]**Objective:** To generate an accurate stock demand forecast for August 2022 to minimize expired inventory (waste) and prevent stockouts across QuickU's network of 5 hubs[cite: 24, 25, 28].
 
+    **Methodology:** Analyzed 7 months of historical data using Python (Statsmodels). [cite_start]Developed **50 unique SARIMA models** to handle seasonality and trend variations across specific product categories and locations[cite: 44].
+    """)
+
+    st.write("") # Spacer
+
+    # --- Key Results & Metrics ---
+    # Metrics with descriptive labels below them
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.metric(label="Total Forecast (Aug '22)", value="417,082")
+        [cite_start]st.caption("Units predicted across all hubs [cite: 42]")
+        
+    with col2:
+        st.metric(label="Model Accuracy (MAPE)", value="21.3%")
+        [cite_start]st.caption("Reliable directional accuracy [cite: 226]")
+
+    with col3:
+        st.metric(label="Top Growth Location", value="Hub E")
+        [cite_start]st.caption("Highest projected demand [cite: 50]")
+
+    st.write("") # Spacer
+
+    # --- Visualization ---
+    st.subheader("Forecasted Hub Performance")
+    
+    # [cite_start]Data from Hub Performance Comparison chart [cite: 177]
+    data = pd.DataFrame({
+        'Hub': ['Hub A', 'Hub B', 'Hub C', 'Hub D', 'Hub E'],
+        'Forecasted Units': [354100, 363896, 473641, 471207, 489192] 
+    })
+
+    # Simple Altair Bar Chart
+    chart = alt.Chart(data).mark_bar(color='#c27ba0').encode(
+        x=alt.X('Hub', sort=None),
+        y=alt.Y('Forecasted Units'),
+        tooltip=['Hub', 'Forecasted Units']
+    ).properties(height=250)
+
+    st.altair_chart(chart, use_container_width=True)
+
+    # --- Link to Full Deck ---
+    st.divider()
+    st.markdown("### 📄 Want to see the full analysis?")
+    st.write("Check out the detailed presentation deck covering the full EDA, model validation, and strategic recommendations.")
+    
+    st.link_button(
+        label="View Full Presentation Deck", 
+        url="https://drive.google.com/file/d/1LTjc5bXmnOqWQVNxAnfqEbgUOQjqht6N/view?usp=sharing"
+    )
+
+# Instructions:
+# Copy this function into your main Streamlit app file and call 
+# project_quicku_forecasting() inside your main layout.
 st.divider()
 
 
