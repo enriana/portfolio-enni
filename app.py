@@ -86,11 +86,11 @@ with edu3:
 
 # --- PROFESSIONAL EXPERIENCE ---
 st.header("🏢 Professional Experience")
-# --- REFINED SECTION ---
+
 # Create columns for the logo and the subheader
 logo_col, title_col = st.columns([1,5])  # Adjust ratio as needed
 with logo_col:
-    # Add the BCA logo. You can find a good URL online.
+    # Add the BCA logo.
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png", width=150)
 with title_col:
     st.subheader("PT. Bank Central Asia, Tbk - KCU Tuban")
@@ -243,6 +243,62 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
     st.divider()
     st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1LTjc5bXmnOqWQVNxAnfqEbgUOQjqht6N/view?usp=sharing)")
 
+# --- Project 4: RevoFin ---
+with st.expander("💼 **Project 4: RevoFin Loan Portfolio Analysis**"):
+    st.markdown("**Objective:** To assess the overall health of the loan portfolio, identify specific risk factors (focusing on high-delinquency cohorts), and provide data-driven recommendations to optimize underwriting and pricing strategies.")
+    st.markdown("**Methodology:** Analyzed 89 monthly cohorts (Aug 2012 – Dec 2019) using **BigQuery (SQL)** for extraction and **Python** for vintage analysis. Used **TKB30** (loans <30 DPD) as the primary quality metric.")
+    
+    st.write("") # Spacer
+
+    # Metrics
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.metric(label="Total Outstanding", value="$2.8B")
+        st.caption("Active loan volume")
+        
+    with col2:
+        st.metric(label="Portfolio Health (TKB30)", value="98.11%")
+        st.caption("Loans current or <30 days past due")
+
+    with col3:
+        st.metric(label="Bad Debt Rate", value="1.89%")
+        st.caption("Low overall default rate")
+
+    st.write("") # Spacer
+
+    # Visualization: Home Ownership Risk Comparison
+    st.subheader("Risk Paradox: Home Ownership in High-Risk Cohort")
+    st.caption("Comparing the 'April 2014' high-risk cohort vs. the portfolio average. Surprisingly, the high-risk group had a higher concentration of mortgage holders.")
+
+    # Data from Report Page 10
+    risk_data = pd.DataFrame({
+        'Category': ['Mortgage', 'Mortgage', 'Rent', 'Rent', 'Own', 'Own'],
+        'Group': ['High-Risk Cohort (Apr 2014)', 'Portfolio Average', 'High-Risk Cohort (Apr 2014)', 'Portfolio Average', 'High-Risk Cohort (Apr 2014)', 'Portfolio Average'],
+        'Percentage': [60.12, 48.93, 33.04, 41.35, 6.85, 9.72] # Portfolio avg for rent/own estimated to sum to 100 based on diff
+    })
+
+    # Grouped Bar Chart
+    risk_chart = alt.Chart(risk_data).mark_bar().encode(
+        x=alt.X('Category', title='Home Ownership Status'),
+        y=alt.Y('Percentage', title='Percentage of Borrowers'),
+        xOffset='Group',
+        color=alt.Color('Group', scale=alt.Scale(range=['#D8A7B1', '#4B4453'])),
+        tooltip=['Group', 'Category', 'Percentage']
+    ).properties(
+        height=300
+    )
+
+    st.altair_chart(risk_chart, use_container_width=True)
+
+    # Link to Full Deck
+    st.divider()
+    st.markdown("### 📄 View Full Analysis")
+    st.write("Deep dive into vintage analysis, TKB30 trends, and risk profiling.")
+    
+    # NOTE: You will need to replace the URL below with the actual link to your RevoFin deck if you have one uploaded. 
+    # For now, I've left a placeholder or you can use the same Drive link structure if you upload it later.
+    st.divider()
+    st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1p-9U8vvnuUYHjhno0x1kvDTx8AVZtOVE/view?usp=sharing)")
+
 st.divider()
-
-
