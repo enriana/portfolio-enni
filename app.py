@@ -183,7 +183,7 @@ with st.expander("🛒 **Project 3: QuickU Demand Forecasting**"):
         st.metric(label="Top Growth Location", value="Hub E")
         st.caption("Highest projected demand")
 
-st.write("") # Spacer
+    st.write("") # Spacer
 
     # Visualization: Historical vs Forecast
     st.subheader("H. Sayur & Buah (Hub E): Historical vs. Forecasted Demand")
