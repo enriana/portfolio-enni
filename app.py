@@ -67,7 +67,7 @@ This experience honed my business acumen and stakeholder communication skills, w
 st.header("🎓 Education")
 
 # Create columns for Education
-edu1, edu2, edu3 = st.columns(3)
+edu1, edu2 = st.columns(2)
 
 with edu1:
     st.markdown("**[RevoU](https://www.google.com/search?q=RevoU)**")
@@ -79,11 +79,6 @@ with edu2:
     st.caption("2006 – 2009")
     st.markdown("PT. Bank Central Asia, Tbk")
     
-with edu3:
-    st.markdown("**[SMAK Santa Maria Malang](https://www.google.com/search?q=SMAK+Santa+Maria+Malang)**")
-    st.caption("2003 – 2006")
-    st.markdown("Senior High School")
-
 # --- PROFESSIONAL EXPERIENCE ---
 st.header("🏢 Professional Experience")
 
