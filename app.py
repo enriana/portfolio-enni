@@ -58,7 +58,7 @@ with st.sidebar:
 
 # --- MAIN CONTENT ---
 st.title("🗂️ Data Analyst Portfolio")
-st.divider()
+
 
 # --- TABS CONFIGURATION ---
 tab_about, tab_projects = st.tabs(["About Me", "Projects"])
