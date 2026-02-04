@@ -331,8 +331,8 @@ with tab_internship:
     col1, col2 = st.columns([1, 3]) 
     
     with col1:
-        # Reduced width to 250px to make it smaller as requested
-        st.image("Logo RevoU x OCA x Telkom.png", width=250)
+        # Reduced width to 350px to make it smaller as requested
+        st.image("Logo RevoU x OCA x Telkom.png", width=350)
         
     with col2:
         st.header("🚀 Virtual Internship Project: RevoU x Telkom Indonesia")
