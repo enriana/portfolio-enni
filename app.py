@@ -68,7 +68,8 @@ st.title("🗂️ Data Analyst Portfolio")
 
 
 # --- TABS CONFIGURATION ---
-tab_about, tab_projects = st.tabs(["About Me", "Projects"])
+# Added the third tab here
+tab_about, tab_projects, tab_internship = st.tabs(["About Me", "Projects", "Virtual Internship RevoU x Telkom"])
 
 # ==========================================
 # TAB 1: ABOUT ME
@@ -152,7 +153,7 @@ with tab_about:
 # TAB 2: PROJECTS
 # ==========================================
 with tab_projects:
-    st.header("📂 Projects")
+    st.header("📂 Personal Projects")
 
     # --- Project 1: Spotify ---
     with st.expander("🎧 **Project 1: Predicting Spotify Track Skips to Improve User Engagement**", expanded=True):
@@ -317,5 +318,61 @@ with tab_projects:
         # Link to Full Deck
         st.divider()
         st.markdown("[View Full Presentation Deck 📋](https://drive.google.com/file/d/1p-9U8vvnuUYHjhno0x1kvDTx8AVZtOVE/view?usp=sharing)")
+
+st.divider()
+
+# ==========================================
+# TAB 3: VIRTUAL INTERNSHIP
+# ==========================================
+with tab_internship:
+    st.header("🚀 Virtual Internship Project: RevoU x Telkom Indonesia")
+    st.markdown("""
+    *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
+    """)
+    st.divider()
+
+    # --- Project A: Unified Monitor ---
+    st.subheader("📊 Project 1: OCA's Unified Channel Performance Monitor")
+    
+    with st.container():
+        st.markdown("""
+        **Objective:** To unify fragmented transaction data across WhatsApp, SMS, Email, and Voice into a "Single Source of Truth" dashboard for real-time performance monitoring and strategic decision-making.
+        
+        **Methodology:** - **Data Engineering:** Ingested 5 raw CSV datasets into **Google BigQuery**, performing SQL engineering (UNION ALL) to standardize disparate schemas.
+        - **Visualization:** Built an interactive **Looker Studio** dashboard to track KPIs like ARPU, Success Rates, and Traffic Volume.
+        
+        **Key Results & Metrics:** - **Revenue Visibility:** Tracked **27.6M IDR** in quarterly revenue across 122.7K transactions.
+        - **Reliability Gap Identified:** Uncovered a critical "Ring No Answer" inefficiency in Voice calls (**77% rate**) and technical failures in WhatsApp (**16% failure rate**).
+        - **Strategic Insight:** Validated a transition towards a "WhatsApp-first" strategy as legacy channels like Email showed declining adoption.
+        """)
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1Gp2u02dIG7erYSlgW8-hd965I2fOZHY_/view?usp=sharing")
+        with col2:
+            st.link_button("📈 View Interactive Dashboard", "https://lookerstudio.google.com/reporting/4cc9f92c-99c7-4c6f-ae9e-d9f4efdac16a")
+
+    st.divider()
+
+    # --- Project B: Client Segmentation ---
+    st.subheader("🎯 Project 2: OCA's Strategic Client Segmentation")
+    
+    with st.container():
+        st.markdown("""
+        **Objective:** To categorize OCA's client base into actionable segments for optimized retention and upsell strategies, moving away from a generic "one-size-fits-all" account management approach.
+        
+        **Methodology:** - **Analysis:** Applied a **Rule-Based Segmentation** framework (preferred over K-Means due to extreme outliers) on aggregated transaction logs.
+        - **Metrics Used:** Revenue Contribution, Active Days (Consistency), Efficiency Rate, and Tenure.
+        
+        **Key Results & Metrics:** - **Homogeneity Surprise:** Discovered the Top 20 clients are identical "Always-On" systems (Active **90/90 days**), refuting the assumption of diverse personas.
+        - **Risk Detection:** Identified a **12% reliability failure rate** among top "Titan" clients, signaling a massive silent churn risk.
+        - **Segments Defined:** Established 4 core personas (**Titans, Rising Stars, Steady Mid-Market, Inefficient**) with specific engagement playbooks for each.
+        """)
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1bGNfqWtnWQV9M9w0qsPP9-b8QOqOusX7/view?usp=sharing")
+        with col2:
+            st.link_button("🎥 View Video Pitching", "https://drive.google.com/file/d/1ZHYI9SA1xuw63eCcpeljSdX2vPYzPIZn/view?usp=sharing")
 
 st.divider()
