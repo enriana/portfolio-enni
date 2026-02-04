@@ -34,11 +34,17 @@ h3 { color: var(--text-color); }
     font-weight: bold;
 }
 [data-testid="stMetricLabel"] { color: var(--text-color); }
-/* Tab styling - BIGGER FONTS */
+
+/* Tab styling - BIGGER BUTTONS */
 button[data-baseweb="tab"] {
-    font-size: 36px;  /* Increased font size */
+    font-size: 26px;        /* Large text */
     font-weight: bold;
     color: var(--text-color);
+    padding: 15px 30px;     /* Increases height and width of the button */
+    background-color: white; /* Optional: gives them a card-like look */
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #F0F0F0;
+    margin-right: 5px;
 }
 </style>
 """, unsafe_allow_html=True)
