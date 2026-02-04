@@ -325,15 +325,19 @@ st.divider()
 # TAB 3: VIRTUAL INTERNSHIP
 # ==========================================
 with tab_internship:
-    # --- LOGO DISPLAY ---
-    # Ensure the file 'Logo RevoU x OCA x Telkom.png' is in the same folder as app.py
-    st.image("Logo RevoU x OCA x Telkom.png", width=600)
     
-    st.header("🚀 Virtual Internship Project: RevoU x Telkom Indonesia")
-    st.markdown("""
-    *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
-    """)
-   
+    # --- LOGO & HEADER SIDE-BY-SIDE ---
+    col1, col2 = st.columns([1, 2]) # 1/3 width for logo, 2/3 for text
+    
+    with col1:
+        # Ensure 'Logo RevoU x OCA x Telkom.png' is in the main directory
+        st.image("Logo RevoU x OCA x Telkom.png", use_column_width=True)
+        
+    with col2:
+        st.header("🚀 Virtual Internship Project: RevoU x Telkom Indonesia")
+        st.markdown("""
+        *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
+        """)
 
     # --- Project A: Unified Monitor ---
     st.subheader("📊 Project 1: OCA's Unified Channel Performance Monitor")
