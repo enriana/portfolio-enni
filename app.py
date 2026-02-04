@@ -335,7 +335,7 @@ with tab_internship:
         st.image("Logo RevoU x OCA x Telkom.png", width=350)
         
     with col2:
-        st.header("🚀 Virtual Internship Project: RevoU x Telkom Indonesia")
+        st.header("Virtual Internship Project: RevoU x Telkom Indonesia")
         st.markdown("""
         *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
         """)
