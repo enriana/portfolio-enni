@@ -339,8 +339,16 @@ with tab_internship:
         st.markdown("""
         *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
         """)
-
-# --- Project A: Unified Monitor ---
+        
+    # --- DISCLAIMER ---
+    st.info("""
+    **DISCLAIMER:** The data provided is a representation of the original data which amount has been adjusted. 
+    The data used is NOT representation of original data, adjusted for educational purposes and does not reflect the actual business condition of the company.
+    """)
+    
+    st.write("") # Spacer
+    
+    # --- Project A: Unified Monitor ---
     with st.expander("📊 **Project 1: OCA's Unified Channel Performance Monitor**", expanded=True):
         st.markdown("**Objective:** To unify fragmented transaction data across WhatsApp, SMS, Email, and Voice into a \"Single Source of Truth\" dashboard for real-time performance monitoring and strategic decision-making.")
         st.markdown("**Methodology:** Ingested 5 raw CSV datasets into **Google BigQuery**, performing SQL engineering (UNION ALL) to standardize disparate schemas, and built an interactive **Looker Studio** dashboard.")
