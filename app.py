@@ -340,48 +340,94 @@ with tab_internship:
         *Included in this section are projects completed during the Virtual Internship program with Telkom Indonesia, focusing on OCA (Omni Communication Assistant).*
         """)
 
-    # --- Project A: Unified Monitor ---
-    st.subheader("📊 Project 1: OCA's Unified Channel Performance Monitor")
-    
-    with st.container():
-        st.markdown("""
-        **Objective:** To unify fragmented transaction data across WhatsApp, SMS, Email, and Voice into a "Single Source of Truth" dashboard for real-time performance monitoring and strategic decision-making.
+# --- Project A: Unified Monitor ---
+    with st.expander("📊 **Project 1: OCA's Unified Channel Performance Monitor**", expanded=True):
+        st.markdown("**Objective:** To unify fragmented transaction data across WhatsApp, SMS, Email, and Voice into a \"Single Source of Truth\" dashboard for real-time performance monitoring and strategic decision-making.")
+        st.markdown("**Methodology:** Ingested 5 raw CSV datasets into **Google BigQuery**, performing SQL engineering (UNION ALL) to standardize disparate schemas, and built an interactive **Looker Studio** dashboard.")
         
-        **Methodology:** - **Data Engineering:** Ingested 5 raw CSV datasets into **Google BigQuery**, performing SQL engineering (UNION ALL) to standardize disparate schemas.
-        - **Visualization:** Built an interactive **Looker Studio** dashboard to track KPIs like ARPU, Success Rates, and Traffic Volume.
-        
-        **Key Results & Metrics:** - **Revenue Visibility:** Tracked **27.6M IDR** in quarterly revenue across 122.7K transactions.
-        - **Reliability Gap Identified:** Uncovered a critical "Ring No Answer" inefficiency in Voice calls (**77% rate**) and technical failures in WhatsApp (**16% failure rate**).
-        - **Strategic Insight:** Validated a transition towards a "WhatsApp-first" strategy as legacy channels like Email showed declining adoption.
-        """)
-        
-        col1, col2 = st.columns(2)
+        st.write("") # Spacer
+
+        # Metrics
+        col1, col2, col3 = st.columns(3)
         with col1:
-            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1Gp2u02dIG7erYSlgW8-hd965I2fOZHY_/view?usp=sharing")
+            st.metric(label="Quarterly Revenue", value="27.6M IDR")
+            st.caption("Across 122.7K transactions")
         with col2:
+            st.metric(label="Voice Inefficiency", value="77%")
+            st.caption("Ring No Answer Rate")
+        with col3:
+            st.metric(label="WhatsApp Success", value="84.5%")
+            st.caption("Primary revenue driver")
+
+        st.write("") # Spacer
+
+        # Visualization: Revenue by Channel (Data from PDF Page 8)
+        st.subheader("Revenue Contribution by Channel")
+        st.caption("WhatsApp and SMS are the primary revenue engines, while Voice and Email lag behind.")
+        
+        rev_data = pd.DataFrame({
+            'Channel': ['WhatsApp', 'SMS', 'Voice Call', 'Email'],
+            'Revenue (IDR)': [11925550, 11613000, 2304220, 1571350]
+        })
+        
+        rev_chart = alt.Chart(rev_data).mark_bar(color='#D8A7B1').encode(
+            x=alt.X('Revenue (IDR)', title='Total Revenue (IDR)'),
+            y=alt.Y('Channel', sort='-x', title='Channel'),
+            tooltip=['Channel', 'Revenue (IDR)']
+        ).properties(height=250)
+        
+        st.altair_chart(rev_chart, use_container_width=True)
+        
+        # Links
+        col_link1, col_link2 = st.columns(2)
+        with col_link1:
+            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1Gp2u02dIG7erYSlgW8-hd965I2fOZHY_/view?usp=sharing")
+        with col_link2:
             st.link_button("📈 View Interactive Dashboard", "https://lookerstudio.google.com/reporting/4cc9f92c-99c7-4c6f-ae9e-d9f4efdac16a")
 
-    
-
     # --- Project B: Client Segmentation ---
-    st.subheader("🎯 Project 2: OCA's Strategic Client Segmentation")
-    
-    with st.container():
-        st.markdown("""
-        **Objective:** To categorize OCA's client base into actionable segments for optimized retention and upsell strategies, moving away from a generic "one-size-fits-all" account management approach.
+    with st.expander("🎯 **Project 2: OCA's Strategic Client Segmentation**"):
+        st.markdown("**Objective:** To categorize OCA's client base into actionable segments for optimized retention and upsell strategies, moving away from a generic \"one-size-fits-all\" account management approach.")
+        st.markdown("**Methodology:** Applied a **Rule-Based Segmentation** framework on aggregated transaction logs to identify behavioral patterns (Revenue, Active Days, Efficiency).")
         
-        **Methodology:** - **Analysis:** Applied a **Rule-Based Segmentation** framework (preferred over K-Means due to extreme outliers) on aggregated transaction logs.
-        - **Metrics Used:** Revenue Contribution, Active Days (Consistency), Efficiency Rate, and Tenure.
-        
-        **Key Results & Metrics:** - **Homogeneity Surprise:** Discovered the Top 20 clients are identical "Always-On" systems (Active **90/90 days**), refuting the assumption of diverse personas.
-        - **Risk Detection:** Identified a **12% reliability failure rate** among top "Titan" clients, signaling a massive silent churn risk.
-        - **Segments Defined:** Established 4 core personas (**Titans, Rising Stars, Steady Mid-Market, Inefficient**) with specific engagement playbooks for each.
-        """)
-        
-        col1, col2 = st.columns(2)
+        st.write("") # Spacer
+
+        # Metrics
+        col1, col2, col3 = st.columns(3)
         with col1:
-            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1bGNfqWtnWQV9M9w0qsPP9-b8QOqOusX7/view?usp=sharing")
+            st.metric(label="Top Client Activity", value="90/90 Days")
+            st.caption("Always-On Systems")
         with col2:
+            st.metric(label="Titan Failure Rate", value="12%")
+            st.caption("Reliability Risk")
+        with col3:
+            st.metric(label="Segments Identified", value="4")
+            st.caption("Titans, Rising Stars, Mid-Market, Inefficient")
+
+        st.write("") # Spacer
+
+        # Visualization: Titan Client Channel Mix (Data from PDF Page 7)
+        st.subheader("Titan Client Channel Mix")
+        st.caption("Top clients show a standardized 'Homogeneous' behavior pattern, heavily relying on WhatsApp and Email automation.")
+        
+        mix_data = pd.DataFrame({
+            'Channel': ['WhatsApp', 'Email', 'SMS', 'Voice'],
+            'Percentage': [40, 33, 16, 11]
+        })
+        
+        mix_chart = alt.Chart(mix_data).mark_arc(innerRadius=50).encode(
+            theta=alt.Theta(field="Percentage", type="quantitative"),
+            color=alt.Color(field="Channel", type="nominal", scale=alt.Scale(range=['#D8A7B1', '#4B4453', '#FADADD', '#9E9E9E'])),
+            tooltip=['Channel', 'Percentage']
+        ).properties(height=300)
+        
+        st.altair_chart(mix_chart, use_container_width=True)
+
+        # Links
+        col_link1, col_link2 = st.columns(2)
+        with col_link1:
+            st.link_button("📄 View Full Pitching Deck", "https://drive.google.com/file/d/1bGNfqWtnWQV9M9w0qsPP9-b8QOqOusX7/view?usp=sharing")
+        with col_link2:
             st.link_button("🎥 View Video Pitching", "https://drive.google.com/file/d/1ZHYI9SA1xuw63eCcpeljSdX2vPYzPIZn/view?usp=sharing")
 
 
