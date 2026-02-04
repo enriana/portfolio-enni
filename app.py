@@ -139,7 +139,6 @@ with tab_about:
         - **Stakeholder Management & Communication**
         - **Project Management & Process Optimization**
         """)
-    st.divider()
 
 
 # ==========================================
